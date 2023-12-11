@@ -3,10 +3,12 @@ function MathX() {
   const memo = {};
   // Возвращается объект с методами для работы с числами Фибоначчи и простыми числами
   return {
+    //сложность O(n)
     nthNumberInTheFibonacci: function (n) {
       // Вызывается функция для вычисления N-го числа Фибоначчи с использованием мемоизации
       return fibonacciDynamic(n, memo);
     },
+    //сложность O(log(n))
     allNumbersInTheFibonacci: function (N) {
       // Создается массив, содержащий все числа Фибоначчи, не превышающие N
       const fibonacciNumbers = [];
@@ -15,6 +17,7 @@ function MathX() {
       }
       return fibonacciNumbers;
     },
+    //сложность O(√n)
     isPrime: function (num) {
       // Функция для проверки, является ли число простым
       if (num < 2) {
@@ -27,6 +30,7 @@ function MathX() {
       }
       return true;
     },
+    // В худшем случае может быть O(N²)
     nthPrimeNumber: function (n) {
       // Реализация для вычисления N-го простого числа
       let count = 0;
@@ -43,6 +47,7 @@ function MathX() {
 
       return num;
     },
+    // В худшем случае может быть O(N²)
     allPrimesUpToN: function (N) {
       // Реализация для вычисления всех простых чисел до N
       const primes = [];
@@ -55,6 +60,7 @@ function MathX() {
     },
   };
 }
+//сложность O(n)
 // Функция для вычисления чисел Фибоначчи с использованием динамического программирования и мемоизации
 function fibonacciDynamic(n, memo = {}) {
   if (n <= 1) {
