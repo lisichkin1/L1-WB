@@ -1,1 +1,1 @@
-# L1-WB
+# Wildberries Frontend L1
