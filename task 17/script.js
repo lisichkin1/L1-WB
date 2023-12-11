@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
     select.style.opacity = '0';
     select.size = 0;
   });
+
   // Функция заполнения выпадающего списка данными
   const selectPush = (data) => {
     select.innerHTML = '';
