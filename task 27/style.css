@@ -1,0 +1,22 @@
+.animatedElement {
+  margin: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+}
+
+.animate {
+  animation: exampleAnimation 1s ease-in-out infinite;
+}
+
+@keyframes exampleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
